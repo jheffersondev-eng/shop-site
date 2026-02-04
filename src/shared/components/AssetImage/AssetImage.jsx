@@ -1,5 +1,5 @@
 export function AssetImage(path) {
-  return `http://localhost:8000/storage/${path}`;
+  return `${process.env.REACT_APP_API_STORAGE_URL}/${path}`;
 }
 
 export default AssetImage;
