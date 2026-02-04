@@ -1,0 +1,53 @@
+/* Badge Atom Styles */
+
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 12px;
+  white-space: nowrap;
+  font-family: 'Inter', 'Poppins', Arial, sans-serif;
+  box-shadow: 0 1px 4px 0 rgba(102, 126, 234, 0.10);
+  padding: 4px 16px;
+  font-size: 0.95rem;
+}
+
+/* Variants */
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+}
+
+.badge-success {
+  background: #22c55e;
+  color: white;
+}
+
+.badge-warning {
+  background: #f59e0b;
+  color: white;
+}
+
+.badge-danger {
+  background: #f5576c;
+  color: white;
+}
+
+.badge-info {
+  background: #06b6d4;
+  color: white;
+}
+
+/* Sizes */
+.badge-sm {
+  padding: 2px 6px;
+  font-size: 11px;
+}
+
+.badge-md {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.badge-lg {
+  padding: 6px 14px;
+  font-size: 14px;
+}
