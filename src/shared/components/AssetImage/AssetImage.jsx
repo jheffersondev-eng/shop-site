@@ -1,5 +1,6 @@
 export function AssetImage(path) {
-  return `${process.env.REACT_APP_API_STORAGE_URL}/${path}`;
+  const baseUrl = process.env.REACT_APP_API_STORAGE_URL;
+  return `${baseUrl}/${path}`;
 }
 
 export default AssetImage;
