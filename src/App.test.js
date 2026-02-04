@@ -5,5 +5,5 @@ test('renders app', () => {
   render(<App />);
 
   // ajusta pra algo que realmente exista na tela
-  expect(screen.getByText(/home/i)).toBeInTheDocument();
+  expect(screen.getByText(/porto\s+shop/i)).toBeInTheDocument();
 });
