@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
+import logo from '../assets/images/porto-shop-branding.png';
 
 export default function Header() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -13,7 +14,7 @@ export default function Header() {
       <div className="navbar-lux-inner">
         {/* Logo minimalista */}
         <a href="/" className="navbar-lux-logo">
-          <span className="navbar-lux-logo-icon">🛒</span>
+          <img src={logo} alt="Porto Shop" className="navbar-lux-logo-img" />
           <span className="navbar-lux-logo-text">Porto <b>Shop</b></span>
         </a>
 
