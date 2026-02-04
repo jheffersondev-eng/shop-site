@@ -2,11 +2,12 @@ import api from '../api';
 import { PRODUCT_PATHS, buildGetAllProductsParams } from './routes';
 
 const PRODUCT_API_BASE = process.env.REACT_APP_API_URL + '/product';
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 export const productService = {
   getAllProductsByFilter: (
     filter = { name: '', category_id: '',  unit_id: '',  owner_id: '', page: 1, page_size: 10 },
-    { token = null, apiKey = 'shop_api_123' } = {}
+    { token = null, apiKey = API_KEY } = {}
   ) => {
     const params = buildGetAllProductsParams(filter);
     const headers = { 'X-API-KEY': apiKey };
