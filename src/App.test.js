@@ -1,14 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
 import App from './app/App';
 
-test('renders learn react link', () => {
-  render(
-    <MemoryRouter>
-      <App />
-    </MemoryRouter>
-  );
+test('renders app', () => {
+  render(<App />);
 
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  // ajusta pra algo que realmente exista na tela
+  expect(screen.getByText(/home/i)).toBeInTheDocument();
 });
