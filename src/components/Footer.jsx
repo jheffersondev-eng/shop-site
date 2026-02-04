@@ -15,16 +15,16 @@ export default function Footer() {
               preços. Compre com segurança e confiança.
             </p>
             <div className="social-links">
-              <a href="#" className="social-link">
+              <a href="https://www.facebook.com" className="social-link" aria-label="Facebook">
                 <FaFacebook />
               </a>
-              <a href="#" className="social-link">
+              <a href="https://www.twitter.com" className="social-link" aria-label="Twitter">
                 <FaTwitter />
               </a>
-              <a href="#" className="social-link">
+              <a href="https://www.instagram.com" className="social-link" aria-label="Instagram">
                 <FaInstagram />
               </a>
-              <a href="#" className="social-link">
+              <a href="https://www.linkedin.com" className="social-link" aria-label="LinkedIn">
                 <FaLinkedin />
               </a>
             </div>
