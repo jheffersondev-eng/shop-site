@@ -5,5 +5,7 @@ test('renders app', () => {
   render(<App />);
 
   // ajusta pra algo que realmente exista na tela
-  expect(screen.getByText(/porto\s+shop/i)).toBeInTheDocument();
+  expect(
+    screen.getByRole('img', { name: /porto\s+shop/i })
+  ).toBeInTheDocument();
 });
